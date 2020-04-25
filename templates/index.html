@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mars Data</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <div>
+        <h2>Latest Mars News</h2>
+        <p class ="heading">{{final_dict.Latest_Mars_Title}}</p>
+        <p class ="heading">{{final_dict.News}}</p>
+    </div>
+    <div><h3>Featured_Mars_Image</h3>
+        <img src="{{ final_dict.Featured_Picture }}" alt="Ft. MarsImg">
+    </div> 
+        <div class="jumbotron text-left">
+        <!--<h2>The typical weather in Costa Rica is:</h2>-->
+   
+        <h4>Hemisphere Pictures </h4>
+        <p> Cerberus Hemisphere Enhanced</p>
+        <img src="{{ final_dict.CerberusHemisphereEnhanced }}" alt="Ft. MarsImg">
+        </div>
+        <div class="jumbotron text-left">
+          <!--<h2>The typical weather in Costa Rica is:</h2>-->
+     
+          <h5>Hemisphere Pictures </h5>
+          <p> Schiaparelli Hemisphere Enhanced </p>
+          <img src="{{ final_dict.SchiaparelliHemisphereEnhanced }}" alt="Ft. MarsImg">
+          </div>
+          <div class="jumbotron text-left">
+            <!--<h2>The typical weather in Costa Rica is:</h2>-->
+       
+            <h6>Hemisphere Pictures </h6>
+            <p> Syrtis Major Hemisphere Enhanced}</p>
+            <img src="{{ final_dict.SyrtisMajorHemisphereEnhanced }}" alt="Ft. MarsImg">
+            </div>
+            <div class="jumbotron text-left">
+              <!--<h2>The typical weather in Costa Rica is:</h2>-->
+         
+              <h7>Hemisphere Pictures </h7>
+              <p>Valles Marineris Hemisphere Enhanced</p>
+              <img src="{{ final_dict.VallesMarinerisHemisphereEnhanced }}" alt="Ft. Mars Img">
+
+              </div>
+        <div
+            class="jumbotron text-right">
+        <h8>Current Weather on Mars </h8>
+        <p>{{final_dict.Twitter}}</p>
+        </div>
+        <div class="jumbotron text-right"></div>
+        <h9>Mars Facts</h9>
+        </div>
+            
+                <table class="table table-bordered table-condensed">
+                    <tbody>
+                     {{final_dict.Table}}
+                    </tbody>
+
+                </table>
+    
+    </div>
+  
+</body>
+
+</html>
